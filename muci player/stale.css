@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Headphones_blog_lg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    border-radius: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    transition: 1s;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: gold;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.navbar ul li:hover{
+    transform: scale(1.3);
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left{
+    margin-left:6% ;
+
+}
+.left h1{
+    font-size: 90px;
+    color: white;
+    line-height: 110px;
+    float: left;
+}
+.right{
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+
+.right p{
+    font-size: 20px;
+    color: lime;
+    font-family: sans-serif;
+    margin-right: 15px;
+}
+#icon{
+    width: 20%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 2s;
+}
+#icon:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzic player</title>
+    <link rel="stylesheet" href="stale.css">
+</head>
+<body>
+     <div class="hero">
+         <div class="navbar">
+             <img src=""  class="logo">
+             <ul>
+                 <li><a href="img/">HOME</a></li>
+                 <li><a href="img/Headphones_blog_lg.jpg"> ABOUT</a></li>
+                 <li><a href="img/4gq34kb9dx82bvjdhs.m4a"> NEW SONG</a></li>
+                 <li><a href="img/Rouzi - Dunyo Tuya Togʻet Ne.mp3"> ALBOM</a></li>
+                 <li><a href="Registratsiya .html"> CONTACT</a></li>
+             </ul>
+         </div>
+         <div class="content">
+            <div class="left">
+                <h1>TH <br> REAL<br> MUSIC</h1>
+            </div>
+
+            <div class="right">
+                <p>Click To Play</p>
+                
+               <img src= "img/icon.png" id="icon">
+            
+            </div>
+         </div>
+     </div>
+
+
+     <audio id="mysong">
+         <source src="img/Ağabala Çaykovski (speed up).mp3" type="audio/mp3">
+     </audio>
+
+     <script>
+
+         var mysong = document.getElementById("mysong");
+         var icon =document.getElementById("icon");
+
+         icon.onclick = function(){
+             if (mysong.paused) {
+                mysong.play();
+                icon.scr ="media/pause.png" ;                   
+             }else{
+                mysong.pause();
+                icon.scr = "media/play.png"
+             }
+
+             }
+         
+
+     </script>
+</body>
+</html>
